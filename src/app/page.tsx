@@ -17,6 +17,9 @@ export default function Home() {
           <Link className="underline" href="/concepts">
             Concepts
           </Link>
+          <Link className="underline" href="/inbox">
+            Inbox
+          </Link>
         </div>
       </div>
     </AppShell>

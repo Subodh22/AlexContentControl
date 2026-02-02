@@ -4,6 +4,26 @@ import { v } from "convex/values";
 const pillar = v.union(v.literal("AI_Apps"), v.literal("Sales_Entrepreneurship"));
 
 export default defineSchema({
+  telegramInbox: defineTable({
+    chatId: v.string(),
+    messageId: v.string(),
+    text: v.string(),
+    pillar: v.union(pillar, v.null()),
+    createdAt: v.number(),
+    processed: v.boolean(),
+  })
+    .index("by_chat", ["chatId"]) 
+    .index("by_createdAt", ["createdAt"]),
+
+  telegramPending: defineTable({
+    chatId: v.string(),
+    kind: v.union(v.literal("research"), v.literal("generate")),
+    conceptTitle: v.string(),
+    pillar,
+    sourceMessageId: v.string(),
+    createdAt: v.number(),
+  }).index("by_chat", ["chatId"]),
+
   videoConcepts: defineTable({
     createdAt: v.number(),
     updatedAt: v.number(),
