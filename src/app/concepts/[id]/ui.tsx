@@ -64,7 +64,9 @@ export function ConceptDetail({ id }: { id: string }) {
               <ul className="list-disc pl-5">
                 {derivatives.map((d) => (
                   <li key={d._id}>
-                    <span className="font-medium">{d.contentType}</span>: {d.title}
+                    <a className="underline" href={`/content/${d._id}`}>
+                      <span className="font-medium">{d.contentType}</span>: {d.title}
+                    </a>
                   </li>
                 ))}
               </ul>

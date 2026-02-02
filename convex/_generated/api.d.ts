@@ -10,6 +10,7 @@
 
 import type * as agentPipeline from "../agentPipeline.js";
 import type * as content from "../content.js";
+import type * as llm from "../llm.js";
 import type * as pipeline from "../pipeline.js";
 import type * as telegram from "../telegram.js";
 import type * as videoConcepts from "../videoConcepts.js";
@@ -23,6 +24,7 @@ import type {
 declare const fullApi: ApiFromModules<{
   agentPipeline: typeof agentPipeline;
   content: typeof content;
+  llm: typeof llm;
   pipeline: typeof pipeline;
   telegram: typeof telegram;
   videoConcepts: typeof videoConcepts;
