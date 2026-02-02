@@ -8,10 +8,10 @@
  * @module
  */
 
-import type * as boards from "../boards.js";
-import type * as cards from "../cards.js";
-import type * as columns from "../columns.js";
-import type * as users from "../users.js";
+import type * as agentPipeline from "../agentPipeline.js";
+import type * as content from "../content.js";
+import type * as pipeline from "../pipeline.js";
+import type * as videoConcepts from "../videoConcepts.js";
 
 import type {
   ApiFromModules,
@@ -20,10 +20,10 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
-  boards: typeof boards;
-  cards: typeof cards;
-  columns: typeof columns;
-  users: typeof users;
+  agentPipeline: typeof agentPipeline;
+  content: typeof content;
+  pipeline: typeof pipeline;
+  videoConcepts: typeof videoConcepts;
 }>;
 
 /**

@@ -10,11 +10,11 @@ export function AppShell({ children }: { children: React.ReactNode }) {
               MasterControl
             </Link>
             <nav className="hidden gap-3 text-sm text-zinc-600 sm:flex">
-              <Link href="/" className="hover:text-zinc-900">
-                Boards
+              <Link href="/concepts" className="hover:text-zinc-900">
+                Concepts
               </Link>
-              <Link href="/kanban" className="hover:text-zinc-900">
-                Kanban
+              <Link href="/calendar" className="hover:text-zinc-900">
+                Calendar
               </Link>
             </nav>
           </div>
