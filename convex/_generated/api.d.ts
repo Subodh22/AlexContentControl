@@ -13,6 +13,7 @@ import type * as content from "../content.js";
 import type * as external from "../external.js";
 import type * as llm from "../llm.js";
 import type * as pipeline from "../pipeline.js";
+import type * as pipelineBoard from "../pipelineBoard.js";
 import type * as telegram from "../telegram.js";
 import type * as videoConcepts from "../videoConcepts.js";
 
@@ -28,6 +29,7 @@ declare const fullApi: ApiFromModules<{
   external: typeof external;
   llm: typeof llm;
   pipeline: typeof pipeline;
+  pipelineBoard: typeof pipelineBoard;
   telegram: typeof telegram;
   videoConcepts: typeof videoConcepts;
 }>;

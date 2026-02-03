@@ -10,6 +10,9 @@ export function AppShell({ children }: { children: React.ReactNode }) {
               MasterControl
             </Link>
             <nav className="hidden gap-3 text-sm text-zinc-600 sm:flex">
+              <Link href="/pipeline" className="hover:text-zinc-900">
+                Pipeline
+              </Link>
               <Link href="/concepts" className="hover:text-zinc-900">
                 Concepts
               </Link>
